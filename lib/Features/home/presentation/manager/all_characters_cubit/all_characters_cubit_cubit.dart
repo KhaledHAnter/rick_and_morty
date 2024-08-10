@@ -17,7 +17,9 @@ class AllCharactersCubitCubit extends Cubit<AllCharactersCubitState> {
     result.fold((failure) {
       emit(AllCharactersCubitFailure(failure.errMessage));
     }, (characters) {
-      emit(AllCharactersCubitSuccess(characters));
+      emit(
+        AllCharactersCubitSuccess(characters),
+      );
     });
   }
 

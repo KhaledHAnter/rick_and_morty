@@ -13,6 +13,7 @@ class AllCharactersCubitLoading extends AllCharactersCubitState {}
 
 class AllCharactersCubitSuccess extends AllCharactersCubitState {
   final List<CharacterModel> characters;
+  // final List<CharacterModel> cached;
 
   const AllCharactersCubitSuccess(this.characters);
 }
